@@ -14,7 +14,8 @@
         }
 
         body {
-            background-color: #f4f6f5;
+            /* Fundo levemente bege/terroso bem claro */
+            background-color: #f7f5f2;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -31,12 +32,14 @@
             background: #ffffff;
             padding: 60px 40px;
             border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-            border-top: 8px solid #2e7d32; /* Verde musgo remetendo à terra/natureza */
+            box-shadow: 0 8px 30px rgba(93, 64, 55, 0.08); /* Sombra com um leve tom de marrom */
+            /* Borda superior mesclando o verde (urbano/aprovação) com o marrom (terra/rural) */
+            border-top: 8px solid;
+            border-image: linear-gradient(to right, #2e7d32, #795548) 1;
         }
 
         h1 {
-            color: #1b5e20;
+            color: #1b5e20; /* Verde escuro */
             font-size: 2.8rem;
             margin-bottom: 5px;
             letter-spacing: -1px;
@@ -62,6 +65,11 @@
             margin-bottom: 20px;
         }
 
+        /* Destaque em marrom escuro (remetendo à terra firme/segurança) */
+        strong {
+            color: #5d4037; 
+        }
+
         /* Tags de especialidades */
         .features {
             display: flex;
@@ -72,19 +80,21 @@
         }
 
         .feature-tag {
-            background: #f0f0f0;
-            color: #444;
+            /* Tons terrosos para as tags */
+            background: #f3ece7;
+            color: #5d4037;
             padding: 10px 20px;
             border-radius: 6px;
             font-size: 0.95rem;
-            border: 1px solid #e0e0e0;
+            border: 1px solid #e0d4c8;
+            font-weight: 500;
         }
 
         /* Rodapé */
         footer {
             margin-top: 40px;
             font-size: 0.9rem;
-            color: #888;
+            color: #795548; /* Marrom médio */
         }
 
         /* Responsividade para celulares */
@@ -108,7 +118,7 @@
         <div class="status-badge">Lançamento em Breve</div>
         
         <p>Estamos construindo o portal definitivo para a <strong>regularização do seu patrimônio</strong>.</p>
-        <p>Em breve, você terá acesso a um espaço completo com soluções, orientações e serviços especializados em regularização de terras urbanas, rurais e todos os trâmites documentais necessários para garantir a sua segurança jurídica.</p>
+        <p>Em breve, você terá acesso a um espaço completo com soluções, orientações e serviços especializados em regularização de terras urbanas, rurais e todos os trâmites documentais necessários para garantir a sua <strong>segurança jurídica</strong>.</p>
 
         <div class="features">
             <span class="feature-tag">Terrenos Urbanos</span>
